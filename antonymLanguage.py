@@ -1,4 +1,4 @@
-def antonymLanguage(orgWords, maxLen):
+def acronymLanguage(orgWords, maxLen):
     words = []
     word = []
     wordsLength = 3
@@ -22,7 +22,7 @@ def antonymLanguage(orgWords, maxLen):
     return words
 
 if __name__ == '__main__':
-    print('\nAntonym Language')
+    print('\nAcronym Language')
     print('-----------------')
 
     again = 'y'
@@ -32,6 +32,6 @@ if __name__ == '__main__':
         orgWords = orgSentence.split(' ')
         maxLen = max(len(i) for i in orgWords)
 
-        sentence = " ".join(antonymLanguage(orgWords, maxLen))
-        print(f'\nAntonym Language: {sentence}')
+        sentence = " ".join(acronymLanguage(orgWords, maxLen))
+        print(f'\nAcronym Language: {sentence}')
         again = input('\nTranslate again? (y/n): ')
